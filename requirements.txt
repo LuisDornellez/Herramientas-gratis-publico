@@ -1,0 +1,7 @@
+customtkinter
+pypdf
+pillow
+reportlab
+qrcode
+cryptography
+openpyxl
