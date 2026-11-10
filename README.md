@@ -1,17 +1,11 @@
 # OfiKit 1.3.3
 Suite portable de oficina para Windows (un solo .exe).
 
-## Cómo obtener el .exe (con link de descarga)
+## Cómo obtener el .exe
 1. Sube el CONTENIDO de esta carpeta (no la carpeta) a un repositorio de GitHub, con estos archivos en la raíz: ofikit.py, requirements.txt, icon.ico, icon.png, README.md, .gitignore y .github/workflows/build.yml.
    Desde el celular GitHub no deja subir carpetas: crea build.yml con "Add file > Create new file", escribiendo en el nombre la ruta completa `.github/workflows/build.yml`, y pega su contenido.
-2. Espera que termine Actions > Build OfiKit (si falla, ahí se ve el error).
-3. Crea el Release: pestaña Releases > "Create a new release" > Tag: `v1.3.3` (Create new tag on publish) > Title: `OfiKit 1.3.3` > Publish release.
-4. Actions vuelve a compilar y adjunta `OfiKit.exe` al Release (tarda unos minutos). Cuando termine, el .exe aparece en la sección Assets del Release.
-
-Link de descarga directo (siempre la última versión):
-`https://github.com/TU_USUARIO/TU_REPO/releases/latest/download/OfiKit.exe`
-
-Para una versión nueva: sube los cambios, y repite el paso 3 con un tag nuevo (ej. `v1.3.4`).
+2. Pestaña Actions > Build OfiKit > espera que termine (si falla, ahí se ve el error). Se ejecuta solo en cada push a main/master, o a mano con "Run workflow".
+3. Ve a la sección **Releases** del repositorio y descarga `OfiKit.exe` del release "Última compilación" (etiqueta `exe-latest`, se reemplaza en cada compilación).
 
 ## Herramientas
 PDF (unir, dividir, rotar, comprimir, imágenes a PDF, marca de agua, numerar, proteger/quitar contraseña), Imágenes, Renombrador, Presupuestos, Recetas (encadenar pasos y guardarlos), Carpeta vigilada, Buscar dentro de archivos, Orden de carpetas (por tipo, duplicados), Utilidades (contraseñas, QR, ocultar datos sensibles), Datos (unir CSV, quitar duplicados, CSV<->Excel), Calculadoras, Historial del portapapeles, Comparar documentos y Control de horas.
